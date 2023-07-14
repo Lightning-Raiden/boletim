@@ -1,2 +1,2 @@
 # boletim
-Typescript - Boletim
+Angular - Boletim
