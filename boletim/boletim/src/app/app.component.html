@@ -1,8 +1,10 @@
 <bom-header></bom-header>
-<bom-aluno [aluno]="aluno1"></bom-aluno>
+<!-- <bom-aluno [aluno]="aluno1"></bom-aluno>
 <bom-aluno [aluno]="aluno2"></bom-aluno>
 <bom-aluno [aluno]="aluno3"></bom-aluno>
-<bom-aluno [aluno]="aluno4"></bom-aluno>
+<bom-aluno [aluno]="aluno4"></bom-aluno> -->
+<bom-aluno *ngFor="let test of alunos" [aluno]="test"></bom-aluno>
+
 
 
 

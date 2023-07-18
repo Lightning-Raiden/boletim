@@ -1,6 +1,14 @@
 <div>
-    Aluno: {{aluno.nome}}
-    <div [hidden]="!aluno.aprovado">
+    Aluno: <a (click)="exibir()">{{aluno.nome}}</a>
+    <div *ngIf="aluno.nota >= 5">
         Nota: {{aluno.nota}}
     </div>
+    <div *ngIf="!aluno.aprovado">
+        Reprovado
+    </div>
 </div>
+
+<!-- <div *ngIf="aluno.aprovado">
+    Aluno: {{aluno.nome}}<br/>
+    Nota: {{aluno.nota}}
+</div> -->
